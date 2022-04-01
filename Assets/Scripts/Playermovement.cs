@@ -14,7 +14,7 @@ public class Playermovement : MonoBehaviour
     {
         float xMove = Input.GetAxisRaw("Horizontal");
         float yMove = Input.GetAxisRaw("Vertical");
-        float xMovement = xMove * speed * Time.deltaTime; ;
+        float xMovement = xMove * speed * Time.deltaTime; 
         float yMovement = yMove * speed * Time.deltaTime;
         transform.Translate(xMovement, yMovement, 0);
 
