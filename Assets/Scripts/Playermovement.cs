@@ -5,8 +5,8 @@ using UnityEngine;
 public class Playermovement : MonoBehaviour
 {
 
-    public float speed = 5.0f; 
-    
+    public float speed = 5.0f;
+
 
 
     // Update is called once per frame
@@ -14,9 +14,14 @@ public class Playermovement : MonoBehaviour
     {
         float xMove = Input.GetAxisRaw("Horizontal");
         float yMove = Input.GetAxisRaw("Vertical");
-        float xMovement = xMove * speed * Time.deltaTime; 
+        float xMovement = xMove * speed * Time.deltaTime;
         float yMovement = yMove * speed * Time.deltaTime;
         transform.Translate(xMovement, yMovement, 0);
-
+        // could say this transform.position = new Vector3(transform.position.x + xMovement, transform.positiony + yMovement, transform.position.Z);
     }
-}
+
+
+ 
+    }
+
+    
