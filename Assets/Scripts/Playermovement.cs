@@ -20,8 +20,24 @@ public class Playermovement : MonoBehaviour
         // could say this transform.position = new Vector3(transform.position.x + xMovement, transform.positiony + yMovement, transform.position.Z);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
 
- 
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Goal")
+        {
+            Debug.Log("Area cleared");
+        }
+
+    }
+    
+
+
+    
+
+}
 
     

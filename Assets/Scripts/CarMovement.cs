@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CarMovement : MonoBehaviour
 {
@@ -18,15 +20,19 @@ public class CarMovement : MonoBehaviour
     //Vector3.up (etc)
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall")
 
         {
             Destroy(gameObject);
         }
-        else if(collision.gameObject.tag == "Player")
+        else if (collision.gameObject.tag == "Player")
 
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-       }
+    
+    }
+
+
      }

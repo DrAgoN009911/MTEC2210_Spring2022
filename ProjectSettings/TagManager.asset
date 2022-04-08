@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Goal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Car
   - Water
   - UI
   - 
