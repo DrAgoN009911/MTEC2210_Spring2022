@@ -34,8 +34,13 @@ public class GameManager : MonoBehaviour
     // if (Input.GetKey(keycode.Space)) (holding the space button)
     // {
 
-//    }
+    //    }
 
+
+    public void reloadscene()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     void Spawncar()
     {
